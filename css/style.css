@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Baloo Bhaijaan 2", cursive;
+    color: white;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+
+/* header style starts*/
+
+header {
+    background: url("../img/2.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem 1rem;
+}
+
+
+/* header style ends*/
+
+
+/* navigation bar start*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+    z-index: 0;
+    position: sticky;
+    top: 0;
+    padding: 0 2rem;
+}
+
+#navigation::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    width: calc(100% - 2rem);
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline;
+    padding: 0rem 1.5rem;
+}
+
+.navbar ul li a {
+    color: #e99d4b;
+    text-decoration: none;
+}
+
+ul li a:hover,
+ul li a:active {
+    text-decoration: underline;
+    color: rgb(141, 117, 85);
+}
+
+.btn {
+    border: 1px solid #e99d4b;
+    border-radius: 5px;
+    padding: 3px 19px;
+    margin-right: 5px;
+    background-color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    color: #e99d4b;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:active {
+    text-decoration: none;
+    color: rgb(141, 117, 85);
+}
+
+.btn:hover {
+    background-color: #e99d4b;
+    color: black;
+}
+
+.logo {
+    margin-top: 12px;
+}
+
+.navmobile {
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 1rem 1rem;
+    display: none;
+}
+
+.logo-container {
+    padding: 0 !important;
+}
+
+.logo-container img {
+    width: 100%;
+    margin-top: 4px;
+}
+
+.logo-and-manu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-ul {
+    display: none;
+}
+
+.navmobile ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#order-btn {
+    margin-top: 10px;
+}
+
+#order-btn .btn {
+    padding: 3px 10px;
+    font-size: .7rem;
+}
+
+.navmobile ul li a {
+    color: #e99d4b;
+    text-decoration: none;
+}
+
+.icon-menu {
+    color: #e99d4b;
+    font-size: 1.6rem;
+}
+
+
+/* navigation bar ends*/
+
+
+/* main heading starts */
+
+.main {
+    height: 84vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e99d4b;
+}
+
+.main-inner-content {
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 3rem;
+}
+
+
+/* main heading ends */
+
+
+/* product section starts*/
+
+.product {
+    background-image: url("../img/3.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.product::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.product-heading h1 {
+    text-align: center;
+    color: #e99d4b;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+}
+
+.product-content .item img {
+    width: 100%;
+    height: 100%;
+}
+
+.item h3 {
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+
+.product-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-content .item {
+    width: 280px;
+    border: 0.1rem solid #e99d4b;
+    padding-bottom: 20px;
+    color: #e99d4b;
+    position: relative;
+    z-index: 98;
+    margin: 1rem;
+    background-color: black;
+}
+
+.on-hover-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 157, 75, 0.8);
+    color: black;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.product-content .item:hover .on-hover-block {
+    display: flex;
+}
+
+
+/* product section ends */
+
+
+/* about-container starts */
+
+.about {
+    padding: 2rem 0.5rem;
+    background: url("../img/home-video.jpg");
+}
+
+.about-container {
+    margin: 0 2rem;
+    text-align: center;
+    color: #e99d4b;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 1rem 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.about-heading {
+    color: #e99d4b;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-container .para {
+    margin-top: 0.3rem;
+}
+
+
+/* about-container ends */
+
+
+/* service container starts */
+
+.service {
+    padding: 2rem 0;
+}
+
+.service-heading h3 {
+    text-align: center;
+    color: #e99d4b;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+
+.service-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-container .item {
+    /* border: 0.1rem solid #e99d4b; */
+    /* padding-bottom: 20px; */
+    color: #e99d4b;
+    position: relative;
+    z-index: 98;
+    margin: 1rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.item-img {
+    width: 250px;
+}
+
+.item-img img {
+    width: 100%
+}
+
+.service-container .item p {
+    display: none;
+}
+
+.service-container .item h3 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+
+/* service container ends */
+
+
+/* form container starts */
+
+.form-heading h3 {
+    text-align: center;
+    color: #e99d4b;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    /* margin: 0 auto; */
+    /* z-index: 1; */
+    /* position: relative; */
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: 1px solid #e99d4b;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.form-container form .item {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: #e99d4b;
+    font-weight: bold;
+    width: 100%;
+}
+
+.form-container label {
+    margin-right: auto;
+}
+
+.form-container form .item input,
+textarea {
+    background-color: black;
+    outline: none;
+    border: 1px solid #e99d4b;
+    padding: 8px;
+    width: 100%;
+    color: #e99d4b;
+    font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+input[type="submit"] {
+    background-color: #e99d4b !important;
+    color: black !important;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: "Baloo Bhaijaan 2", cursive;
+    font-size: 1.1rem;
+}
+
+
+/* form container ends */
+
+
+/* footer starts */
+
+.footer-item {
+    text-align: center;
+    color: #e99d4b;
+}
+
+
+/* footer ends */
+
+
+/* responsive navigation bar */
+
+@media screen and (max-width: 850px) {
+    .navbar {
+        display: none;
+    }
+    .navmobile {
+        display: block;
+    }
+}
+
+
+/* responsive form */
+
+@media screen and (max-width: 425px) {
+    header {
+        padding: 0.5rem;
+    }
+    .main h1 {
+        font-size: 2rem;
+    }
+    .product-heading h1 {
+        font-size: 2rem;
+    }
+    .service-heading h3 {
+        font-size: 2rem;
+    }
+    .about-heading {
+        font-size: 2rem;
+    }
+    .about {
+        padding: 0.5rem;
+    }
+    .about-container {
+        margin: 0;
+        padding: 1rem;
+    }
+    .form-heading h3 {
+        font-size: 2rem;
+    }
+    .form-container form {
+        width: 90%;
+    }
+}
